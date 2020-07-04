@@ -7,7 +7,7 @@
 			function copyToClip(str) {
 				function listener(e) {
 					e.clipboardData.setData("text/html", str);
-					e.clipboardData.setData("text/plain", str);
+					//e.clipboardData.setData("text/plain", str);
 					e.preventDefault();
 				}
 			document.addEventListener("copy", listener);
@@ -24,12 +24,12 @@
 		Copy L3 collab Template
 	 </button>
 	<button onclick="copyToClip(document.getElementById('updateText').innerHTML)">
-		Copy L2 update Template
+		Copy L2/L3 update Template
 	 </button>
 <div id=templateText style="display:none">
   
 <b>1) Is this a 24x7 support request:</b><br/><br/><br/>
-<b>2) Statement of the problem:</b><br/><br/><br/>
+<b>2) Statement of the problem:</b><br/><br/><br/>test
 <b>3) Is the problem Reproducible?</b><br/><br/><br/>
 <b>4) Reproduction steps:</b><br/><br/><br/>
 <b>5) Product(s) version (incl. Fixpack Level) / DBMS Product & Version:</b><br/><br/><br/>
@@ -126,6 +126,36 @@
 <br/>**************** End of Salesforce Case Update for L2 Format **************
 
 	</div>
+	<hr>
+	
+	**************** Begin of Salesforce Case Update for L3 Format **************
+<br/>
+<br/><b>Action Taken:</b>
+<br/>
+Actions taken and analysis performed by either L2 or L3
+<br/>
+<br/><b>Action Plan:</b>
+<br/>
+Define the next actions required to move problem analysis and solution finding forward
+<br/>
+<br/>Example:
+<br/>Customer to:                                                          
+<br/>- reproduce the issue and provide all details according to latest email 
+<br/> L3 to:                                                                
+<br/>- review latest findings                                               
+<br/><b>Action Plan Owner:</b>
+<br/>Define who is/are the next action taker(s)
+<br/>
+<br/>Example:
+Customer / L3 
+<br/>
+<br/><b>Update Made By:</b>
+<br/>Identify who made this update. Why? Updates made in one system, ie. Salesforce,
+<br/>will be transposed to into the complimentary system, ie. RTC. The complimentary
+<br/>system will identify the update originator as a system id. It is convenient and
+<br/>sometimes necessary to understand who made the update.
+<br/>**************** End of Salesforce Case Update for L3 Format **************
+	
 	</body>
 
 
